@@ -1,0 +1,11 @@
+.container div table, td {
+  border : 1px solid black;
+}
+
+.container div {
+  padding      : 10px;
+  border       : 1px solid black;
+  float        : left;
+  margin-right : 5px;
+  margin-top   : 15px;
+}

@@ -1,0 +1,29 @@
+.records {
+  margin-bottom : 20px;
+}
+
+.records div {
+  text-align    : center;
+  color         : white;
+  height        : 20px;
+  margin-top    : 2px;
+  font-family   : inherit;
+  border-radius : 10px;
+}
+
+.filter input {
+  margin-bottom    : 20px;
+  border-color     : inherit;
+  background-color : white;
+  border-radius    : 10px;
+}
+
+.subjects input {
+  height        : 25px;
+  width         : 95px;
+  text-align    : center;
+  font-family   : inherit;
+  font-size     : 15px;
+  border-radius : 10px;
+  border-color  : inherit;
+}

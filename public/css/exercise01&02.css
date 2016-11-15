@@ -1,0 +1,7 @@
+.container div {
+  text-align  : right;
+  color       : white;
+  height      : 20px;
+  margin-top  : 2px;
+  font-family : sans-serif;
+}
