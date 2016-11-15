@@ -7,35 +7,38 @@ function drawShapes() {
 	var dimension = 100;
 	var distanceBetweenShapes = 50;
 	var radius = dimension / 2;
+	var marginTop = 10;
 
 	svg.append("line")
 		.style("stroke", "black")
-		.attr("x1", 0)
-		.attr("y1", dimension)
-		.attr("x2", dimension)
-		.attr("y2", 0)
+		.attr("x1", marginTop)
+		.attr("y1", dimension + marginTop)
+		.attr("x2", dimension + marginTop)
+		.attr("y2", marginTop);
 
 	svg.append('circle')
 		.attr('r', radius)
 		.attr('cx', dimension + distanceBetweenShapes + radius)
-		.attr('cy', radius)
+		.attr('cy', radius + marginTop)
 		.attr('fill', 'none')
-		.attr('stroke', 'black')
+		.attr('stroke', 'black');
 
 	svg.append('rect')
 		.attr('width', dimension)
 		.attr('height', dimension)
 		.attr('x', (2 * dimension) + (2 * distanceBetweenShapes))
-		.attr('y', 0)
+		.attr('y', marginTop)
 		.attr('fill', 'none')
-		.attr('stroke', 'black');
+		.attr('stroke', 'black')
+		.attr("rx", 6)
+		.attr("ry", 6);
 
 	var x1 = 3 * dimension + 3 * distanceBetweenShapes + (dimension / 2);
-	var y1 = 0;
+	var y1 = marginTop;
 	var x2 = 3 * dimension + 3 * distanceBetweenShapes;
-	var y2 = dimension;
+	var y2 = dimension + marginTop;
 	var x3 = x1 + (dimension / 2);
-	var y3 = dimension;
+	var y3 = dimension + marginTop;
 	var points = x1 + ',' + y1 + ' ' + x2 + ',' + y2 + ' ' + x3 + ',' + y3;
 
 	svg.append('polygon')
