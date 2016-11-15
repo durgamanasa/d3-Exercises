@@ -1,5 +1,5 @@
 function drawShapes() {
-	var container = d3.select('body').select('.container')
+	var container = d3.select('body').select('.container');
 	var svg = container.append('svg')
 		.attr('width', 1000)
 		.attr('height', 500);
@@ -10,7 +10,6 @@ function drawShapes() {
 	var marginTop = 10;
 
 	svg.append("line")
-		.style("stroke", "black")
 		.attr("x1", marginTop)
 		.attr("y1", dimension + marginTop)
 		.attr("x2", dimension + marginTop)
@@ -19,17 +18,13 @@ function drawShapes() {
 	svg.append('circle')
 		.attr('r', radius)
 		.attr('cx', dimension + distanceBetweenShapes + radius)
-		.attr('cy', radius + marginTop)
-		.attr('fill', 'none')
-		.attr('stroke', 'black');
+		.attr('cy', radius + marginTop);
 
 	svg.append('rect')
 		.attr('width', dimension)
 		.attr('height', dimension)
 		.attr('x', (2 * dimension) + (2 * distanceBetweenShapes))
 		.attr('y', marginTop)
-		.attr('fill', 'none')
-		.attr('stroke', 'black')
 		.attr("rx", 6)
 		.attr("ry", 6);
 
@@ -43,8 +38,6 @@ function drawShapes() {
 
 	svg.append('polygon')
 		.attr('points', points)
-		.attr('fill', 'none')
-		.attr('stroke', 'black')
 }
 
 window.onload = drawShapes;

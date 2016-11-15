@@ -1,0 +1,20 @@
+.container svg line, circle, rect, polygon {
+  stroke-width : 2px;
+  fill         : none;
+}
+
+.container svg line {
+  stroke : gray;
+}
+
+.container svg circle {
+  stroke : red;
+}
+
+.container svg rect {
+  stroke : steelblue;
+}
+
+.container svg polygon {
+  stroke : green;
+}
