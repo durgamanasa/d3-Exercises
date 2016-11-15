@@ -42,7 +42,6 @@ function drawShapes() {
 	var points = x1 + ',' + y1 + ' ' + x2 + ',' + y2 + ' ' + x3 + ',' + y3;
 
 	svg.append('polygon')
-		.attr('points', '500,0 450,100 550,100')
 		.attr('points', points)
 		.attr('fill', 'none')
 		.attr('stroke', 'black')
