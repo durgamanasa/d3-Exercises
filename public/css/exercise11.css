@@ -1,0 +1,14 @@
+.linePath, .circles {
+  stroke : steelblue;
+}
+
+.linePath {
+  stroke-width : 2px;
+  fill         : none;
+}
+
+.circles {
+  stroke-width : 1px;
+  fill: white;
+}
+
