@@ -1,0 +1,19 @@
+.lineOfPoints, .sineValuesOfPoints {
+  stroke-width : 2px;
+  fill         : none;
+}
+
+.lineOfPoints {
+  stroke : darkred;
+}
+
+.sineValuesOfPoints {
+  stroke : darkblue;
+}
+
+.lineOfPointsCircles, .sineValuesOfPointsCircles {
+  stroke       : steelblue;
+  stroke-width : 1px;
+  fill         : white;
+}
+
