@@ -1,0 +1,18 @@
+.areaPath {
+  fill : lightsteelblue;
+}
+
+.linePath, .circles {
+  stroke : steelblue;
+}
+
+.linePath {
+  stroke-width : 4px;
+  fill         : none;
+}
+
+.circles {
+  stroke-width : 1px;
+  fill         : white;
+}
+
