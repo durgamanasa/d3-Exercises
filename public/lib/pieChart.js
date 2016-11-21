@@ -1,21 +1,16 @@
-function drawPieChart() {
-	var width = 1000;
-	var height = 500;
-	var data = [1, 1, 2, 2, 1, 2, 1];
-	var colors = ['steelblue', 'lightsteelblue', 'darkorange', 'burlywood', 'green', 'lightgreen', 'red'];
-	var radius = Math.min(width, height) / 2;
+var width = 1000;
+var height = 500;
+var data = [1, 1, 2, 2, 1, 2, 1];
+var colors = ['steelblue', 'lightsteelblue', 'darkorange', 'burlywood', 'green', 'lightgreen', 'red'];
+var radius = Math.min(width, height) / 2;
+
+
+function drawPieChart(arc,pie) {
+	console.log('coming here');
 
 	var svg = d3.select('body').append('svg')
 		.attr('width', width)
 		.attr('height', height);
-
-	var arc = d3.arc()
-		.outerRadius(radius)
-		.innerRadius(0);
-
-	var pie = d3.pie()
-		.sort(null)
-		.value(function(d) { return d; });
 
 	var g = svg.selectAll(".arc")
 		.data(pie(data))
