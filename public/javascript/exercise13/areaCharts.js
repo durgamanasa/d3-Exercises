@@ -5,7 +5,7 @@ function formula(value) {
 var curves = [
 	{curve: d3.curveLinearClosed, curveTitle: 'curveLinearClosed'},
 	{curve: d3.curveStepAfter, curveTitle: 'curveStepAfter'},
-	{curve: d3.curveBasisOpen, curveTitle: 'curveBasis'},
+	{curve: d3.curveBasisOpen, curveTitle: 'curveBasisOpen'},
 	{curve: d3.curveCardinalClosed, curveTitle: 'curveCardinalClosed'},
 	{curve: d3.curveBasis, curveTitle: 'curveCardinal'}
 ];
@@ -20,8 +20,8 @@ function drawAreaChartWith(curve) {
 	var innerWidth = (width / 2) - 100;
 	var translateX = margin;
 	var translateY = 2 * margin + 10;
-
 	var data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 
 	var svg = d3.select('body').append('svg')
 		.attr('width', width)
